@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="welcome text-center">Welcome to <br> Instagram App</h1>
+  <div class="card card-container">
+    <h2 class='login_title text-center'>Login</h2>
+    <hr>
+    <form class="form-signin">
+       <div class="form-group" style="margin-left:50px">
+           <%= link_to "Login with Instagram" ,Instagram.authorize_url(redirect_uri:ENV['REDIRECT_URI'], scope: "basic public_content relationships likes follower_list"), class:"btn btn-lg btn-primary" %>
+       </div>
+    </form>
+   </div>
+</div>
