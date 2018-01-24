@@ -9,8 +9,8 @@ class InstagramUser < ApplicationRecord
       @Profile_Pic = @user_profile.profile_picture
       
       instagram_user = InstagramUser.new()
-      check_user = InstagramUser.find_by(access_token: @user_profile.access_token)
-      if !check_user.present?        
+      #check_user = InstagramUser.find_by(access_token: @user_profile.access_token)
+      #if !check_user.present?        
         instagram_user.access_token = @user_profile.access_token
         instagram_user.user_name = @UserName
         instagram_user.full_name = @FullName
@@ -18,7 +18,7 @@ class InstagramUser < ApplicationRecord
         instagram_user.bio = @Bio
         instagram_user.save!
         instagram_user
-      end
-      InstagramUser.last
+      #end
+      #InstagramUser.last
     end
 end
