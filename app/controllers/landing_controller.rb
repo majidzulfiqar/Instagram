@@ -20,7 +20,11 @@ class LandingController < ApplicationController
       end
     end
     
-    
+    def media
+      client = Instagram.client(:access_token => session[:response]['access_token'])
+      @user_media = client.user_recent_media
+    end
+        
     def logout
         session[:response] = nil
         session[:user_profile] = nil

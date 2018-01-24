@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get  '/callback' => 'landing#callback'
   get  '/profile' => 'landing#profile'
   get  '/logout' => 'landing#logout'
+  get  '/media' => 'landing#media'
 end

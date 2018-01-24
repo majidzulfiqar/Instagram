@@ -1,0 +1,35 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+        <br>
+
+        </div>
+        <div class="col-md-9 col-md-offset-1 col-lg-offset-1 toppad" >
+
+            <div class="panel panel-info">
+                <div class="panel-heading">                
+                    <h3 class="panel-title"><%= session[:user_profile]['full_name'].titleize  + " Recent Media" %></h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class=" col-md-12">
+                            <% @user_media.each do |media_item| %>
+                                <div style='float:left; padding:6px;'>
+                                    <img src='<%= media_item.images.thumbnail.url %> '><br/>
+                                </div>
+                            <%end %>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+    
+                    <span class="pull-right">
+    
+                    </span>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</div>
