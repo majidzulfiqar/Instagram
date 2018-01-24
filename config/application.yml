@@ -1,3 +1,4 @@
 CLIENT_ID: 'e7ab89acd440433c80169bed5f1831c1'
 CLIENT_SECRET: '0a6f5fed5aab4ee8a2829e01551d9a78'
-REDIRECT_URI: 'http://myappinsta.herokuapp.com/callback'
+REDIRECT_URI: 'http://localhost:3000/callback'
+#REDIRECT_URI: 'http://myappinsta.herokuapp.com/callback'

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'landing#index'
+  root 'application#index'
   get  '/callback' => 'landing#callback'
   get  '/profile' => 'landing#profile'
+  get  '/logout' => 'landing#logout'
 end

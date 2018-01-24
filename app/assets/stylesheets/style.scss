@@ -29,7 +29,7 @@ hr{
     font-family: "myriad-pro",sans-serif;
     font-style: normal;
     font-weight: 100;
-    color: #FFFFFF;
+    color: black;
     margin-bottom: 25px;
     margin-top: 50px;
 
@@ -39,7 +39,7 @@ hr{
     font-family: "myriad-pro",sans-serif;
     font-style: normal;
     font-weight: 100;
-    color: rgba(164, 164, 164, 0.44);
+    color: rgba(56, 56, 56, 0.6);
 }
 
 .card-container.card {
@@ -208,4 +208,24 @@ hr{
 }
 .toppad
 {margin-top:20px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: black !important;
+    font-size: 16px !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #fff !important;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff !important;
+  background-color: #090909;
+}
+
+.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444 !important;
+  background-color: transparent;
 }
